@@ -169,17 +169,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemCount: 5,
                     itemBuilder: ((context, index) => Padding(
                           padding: index < 4
-                              ? const EdgeInsets.only(
-                                  top: 3,
-                                  bottom: 3,
-                                  left: 3,
-                                  right: 15.0,
-                                )
-                              : const EdgeInsets.only(
-                                  top: 3,
-                                  bottom: 3,
-                                  left: 3,
-                                ),
+                              ? const EdgeInsets.only(right: 15.0)
+                              : const EdgeInsets.all(0),
                           child: Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
@@ -278,17 +269,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemCount: 5,
                     itemBuilder: ((context, index) => Padding(
                           padding: index < 4
-                              ? const EdgeInsets.only(
-                                  top: 3,
-                                  bottom: 3,
-                                  left: 3,
-                                  right: 15.0,
-                                )
-                              : const EdgeInsets.only(
-                                  top: 3,
-                                  bottom: 3,
-                                  left: 3,
-                                ),
+                              ? const EdgeInsets.only(right: 15.0)
+                              : const EdgeInsets.all(0),
                           child: Card(
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
