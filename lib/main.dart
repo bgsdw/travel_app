@@ -170,73 +170,76 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemCount: 5,
                     itemBuilder: ((context, index) => Padding(
                           padding: index < 4
-                              ? const EdgeInsets.only(right: 15.0)
-                              : const EdgeInsets.all(0),
-                          child: Card(
-                            shape: RoundedRectangleBorder(
+                              ? const EdgeInsets.only(
+                                  left: 3, top: 3, right: 15.0, bottom: 3)
+                              : const EdgeInsets.only(
+                                  left: 3, top: 3, bottom: 3),
+                          child: Container(
+                            width: 165,
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: const Color(0XFFFEFEFE),
                               borderRadius: BorderRadius.circular(10),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0xFFF3F3F3),
+                                  blurRadius: 5,
+                                  spreadRadius: 3,
+                                ),
+                              ],
                             ),
-                            child: Container(
-                              width: 165,
-                              height: 240,
-                              decoration: BoxDecoration(
-                                color: const Color(0XFFFEFEFE),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              padding: const EdgeInsets.all(10),
-                              child: Column(
-                                children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8),
-                                    child: Image.network(
-                                      'https://wallpaperaccess.com/full/2117973.jpg',
-                                      fit: BoxFit.cover,
-                                      height: 165,
-                                    ),
+                            padding: const EdgeInsets.all(10),
+                            child: Column(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Image.network(
+                                    'https://wallpaperaccess.com/full/2117973.jpg',
+                                    fit: BoxFit.cover,
+                                    height: 165,
                                   ),
-                                  const SizedBox(height: 10),
-                                  Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          const Text(
-                                            'Jatibarang',
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                ),
+                                const SizedBox(height: 10),
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          'Jatibarang',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
                                           ),
-                                          const SizedBox(height: 5),
-                                          Row(
-                                            children: const [
-                                              Icon(
-                                                Icons.pin_drop,
-                                                size: 15,
-                                                color: Color(0xFF007AFF),
+                                        ),
+                                        const SizedBox(height: 5),
+                                        Row(
+                                          children: const [
+                                            Icon(
+                                              Icons.pin_drop,
+                                              size: 15,
+                                              color: Color(0xFF007AFF),
+                                            ),
+                                            SizedBox(width: 5),
+                                            Text(
+                                              'Semarang, Indonesia',
+                                              style: TextStyle(
+                                                fontSize: 11,
                                               ),
-                                              SizedBox(width: 5),
-                                              Text(
-                                                'Semarang, Indonesia',
-                                                style: TextStyle(
-                                                  fontSize: 11,
-                                                ),
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                      const Icon(
-                                        Icons.favorite,
-                                        size: 15,
-                                        color: Colors.red,
-                                      ),
-                                    ],
-                                  )
-                                ],
-                              ),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                    const Icon(
+                                      Icons.favorite,
+                                      size: 15,
+                                      color: Colors.red,
+                                    ),
+                                  ],
+                                )
+                              ],
                             ),
                           ),
                         )),
@@ -271,71 +274,74 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemCount: 5,
                     itemBuilder: ((context, index) => Padding(
                           padding: index < 4
-                              ? const EdgeInsets.only(right: 15.0)
-                              : const EdgeInsets.all(0),
-                          child: Card(
-                            shape: RoundedRectangleBorder(
+                              ? const EdgeInsets.only(
+                                  left: 3, top: 3, right: 15.0, bottom: 3)
+                              : const EdgeInsets.only(
+                                  left: 3, top: 3, bottom: 3),
+                          child: Container(
+                            width: 250,
+                            height: 240,
+                            decoration: BoxDecoration(
+                              color: const Color(0XFFFEFEFE),
                               borderRadius: BorderRadius.circular(10),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0xFFF3F3F3),
+                                  blurRadius: 5,
+                                  spreadRadius: 3,
+                                ),
+                              ],
                             ),
-                            child: Container(
-                              width: 280,
-                              height: 80,
-                              decoration: BoxDecoration(
-                                color: const Color(0xFFFEFEFE),
-                                borderRadius: BorderRadius.circular(10),
-                              ),
-                              padding: const EdgeInsets.all(10),
-                              child: Row(
-                                children: [
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8),
-                                    child: Image.network(
-                                      'https://wallpaperaccess.com/full/2117973.jpg',
-                                      fit: BoxFit.cover,
-                                      height: 80,
-                                      width: 80,
-                                    ),
+                            padding: const EdgeInsets.all(10),
+                            child: Row(
+                              children: [
+                                ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Image.network(
+                                    'https://wallpaperaccess.com/full/2117973.jpg',
+                                    fit: BoxFit.cover,
+                                    height: 80,
+                                    width: 80,
                                   ),
-                                  const SizedBox(width: 10),
-                                  Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          const Text(
-                                            'Jatibarang',
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                ),
+                                const SizedBox(width: 10),
+                                Row(
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Column(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        const Text(
+                                          'Jatibarang',
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
                                           ),
-                                          const SizedBox(height: 5),
-                                          Row(
-                                            children: const [
-                                              Icon(
-                                                Icons.pin_drop,
-                                                size: 15,
-                                                color: Color(0xFF007AFF),
+                                        ),
+                                        const SizedBox(height: 5),
+                                        Row(
+                                          children: const [
+                                            Icon(
+                                              Icons.pin_drop,
+                                              size: 15,
+                                              color: Color(0xFF007AFF),
+                                            ),
+                                            SizedBox(width: 5),
+                                            Text(
+                                              'Semarang, Indonesia',
+                                              style: TextStyle(
+                                                fontSize: 11,
                                               ),
-                                              SizedBox(width: 5),
-                                              Text(
-                                                'Semarang, Indonesia',
-                                                style: TextStyle(
-                                                  fontSize: 11,
-                                                ),
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    ],
-                                  )
-                                ],
-                              ),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ],
+                                )
+                              ],
                             ),
                           ),
                         )),
