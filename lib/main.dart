@@ -116,7 +116,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Center(
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      // shrinkWrap: true,
                       children: const [
                         FilterTab(
                           title: 'All',
@@ -346,6 +345,103 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         )),
                   ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      bottomNavigationBar: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(40),
+          topRight: Radius.circular(40),
+        ),
+        child: BottomAppBar(
+          child: Container(
+            color: Colors.white,
+            height: 80,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.home,
+                      size: 30,
+                      color: Colors.blue,
+                    ),
+                    const SizedBox(height: 5),
+                    Container(
+                      width: 30,
+                      height: 5,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(4),
+                        color: Colors.blue,
+                      ),
+                    )
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.airplane_ticket,
+                      size: 30,
+                    ),
+                    const SizedBox(height: 5),
+                    Container(
+                      width: 30,
+                      height: 5,
+                      color: Colors.transparent,
+                    )
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.favorite,
+                      size: 30,
+                    ),
+                    const SizedBox(height: 5),
+                    Container(
+                      width: 30,
+                      height: 5,
+                      color: Colors.transparent,
+                    )
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.message_outlined,
+                      size: 30,
+                    ),
+                    const SizedBox(height: 5),
+                    Container(
+                      width: 30,
+                      height: 5,
+                      color: Colors.transparent,
+                    )
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Icon(
+                      Icons.person,
+                      size: 30,
+                    ),
+                    const SizedBox(height: 5),
+                    Container(
+                      width: 30,
+                      height: 5,
+                      color: Colors.transparent,
+                    )
+                  ],
                 ),
               ],
             ),
