@@ -10,11 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter App',
+      title: 'Travel App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter App'),
+      home: const MyHomePage(title: 'Travel App'),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -109,6 +109,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
+              const SizedBox(height: 30),
+              SizedBox(
+                height: 40,
+                child: Center(
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    // shrinkWrap: true,
+                    children: const [
+                      FilterTab(
+                        title: 'All',
+                        isSelected: true,
+                      ),
+                      SizedBox(width: 5),
+                      FilterTab(
+                        title: 'Nearby',
+                        isSelected: false,
+                      ),
+                      SizedBox(width: 5),
+                      FilterTab(
+                        title: 'Popular',
+                        isSelected: false,
+                      ),
+                      SizedBox(width: 5),
+                      FilterTab(
+                        title: 'Most Viewed',
+                        isSelected: false,
+                      ),
+                    ],
+                  ),
+                ),
+              )
             ],
           ),
         ),
@@ -117,8 +148,44 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+class FilterTab extends StatelessWidget {
+  final String title;
+  final bool isSelected;
+
+  const FilterTab({
+    Key? key,
+    required this.title,
+    required this.isSelected,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        padding: EdgeInsets.symmetric(
+          horizontal: isSelected ? 30 : 10,
+          vertical: 10,
+        ),
+        child: Text(
+          title,
+          style: TextStyle(
+            color:
+                isSelected ? const Color(0xFF518CC7) : const Color(0XFFB4B5B8),
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: isSelected ? const Color(0xFFD1EEFF) : Colors.transparent,
+        ),
+      ),
+    );
+  }
+}
+
 class CustomButton extends StatelessWidget {
   final Icon icon;
+
   const CustomButton({
     Key? key,
     required this.icon,
