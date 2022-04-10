@@ -157,6 +157,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.blue,
+                        fontSize: 12,
                       ),
                     ),
                   ],
@@ -257,6 +258,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: Colors.blue,
+                        fontSize: 12,
                       ),
                     ),
                   ],
